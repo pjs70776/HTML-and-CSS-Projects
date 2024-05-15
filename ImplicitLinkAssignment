@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Example title.</title>
+		<meta charset="utf-8">
+	</head>
+	<body>This is the body
+		<a href="dog.jpeg">Dog Image</a>
+	
+	</body>
+</html>
