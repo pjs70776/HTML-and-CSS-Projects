@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>Basic Webpage Assignment.</title>
+	<title>Auto Parts Site.</title>
 	<meta charset="utf-8">
 </head>
 
 <body>
 	<nav>
-		<a href="Assignment.html">Home</a>
+		<a href="Auto_Parts_Site.html">Parts Site</a>
+        <a href="Assignment.html">Home</a>
 		<a href="ImageAssignment.html">Image Page</a>
 		<a href="Dog_Video.html">Dog Video</a>
 	</nav>
@@ -21,7 +22,7 @@
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-	<img src="dog.jpg" alt="dog">
+	<img src="Images/AutoParts.jpg" alt="auto parts">
 
 	<blockquote cite="https://en.wikipedia.org/wiki/Chrysler_PT_Cruiser#Updates.html">
 		Intended to invoke 1930s aesthetics, the exterior of the PT Cruiser was designed by Bryan Nesbitt.
