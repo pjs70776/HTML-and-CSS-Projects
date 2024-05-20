@@ -3,4 +3,9 @@ p {
     background: black;
     font-weight: bold;
     text-align: center;
+    text-shadow: 2px 2px gray;
+}
+
+h1 {    
+    text-shadow: 2px 2px;
 }
