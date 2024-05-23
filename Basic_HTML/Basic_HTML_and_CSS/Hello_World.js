@@ -1,5 +1,5 @@
 var greeting = 'Hello, World!';
-    console.log(greeting);
+console.log(greeting);
 
 var greeting2 = 'Welcome to Node.js';
 console.log(greeting2);
