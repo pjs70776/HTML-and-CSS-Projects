@@ -13,7 +13,7 @@ h1 {
     height: 450px;
     background-color: #faebd7;
     border: 2px solid black;
-    border-radius: 54 54 54 54;
+    border-radius: 5%;
 }
 
 /*------------------------------------------------
@@ -27,7 +27,7 @@ h1 {
     height: 100px;
     margin: 5px;
     border: 1px solid black;
-    border-radius: 254;
+    border-radius: 25%;
     cursor: pointer;
     transition: transform .5s ease-in-out;
 }
@@ -71,23 +71,23 @@ h1 {
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
 }
-.squares:nth-child(1): hover {
+.squares:nth-child(1):hover {
     background: #13b4ff;
 }
-.squares:nth-child(2): hover {
+.squares:nth-child(2):hover {
     background: #d861af;
 }
-.squares:nth-child(3): hover {
+.squares:nth-child(3):hover {
     background: #81205f;
 }
-.squares:nth-child(4): hover {
+.squares:nth-child(4):hover {
     background: #77b800;
 }
 
 /*--------------------------------------------------------
     ANIMATION EFFECT
 -----------------------------------------------------------*/
-@keyframes-race {
+@keyframes race {
     0%, 100% {
         transform: traslateY(0px);
         background-image: url("Project/Images/Icons/bigsmile.jpg")
