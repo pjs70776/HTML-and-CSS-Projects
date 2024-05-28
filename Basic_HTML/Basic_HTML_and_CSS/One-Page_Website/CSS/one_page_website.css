@@ -19,9 +19,15 @@ h2 {
 /*-------------------------
     INPUTS
 -------------------------*/
-div.a {
-    width: 50%;
+input {
+  width: 25%;
     border: 1px solid black;
-    margin: 20px;
+    margin: 2px;
+    border-style: single;
+    border-width: 1px;
     border-radius: 1%;
+    padding: 2%;
+    
   }
+
+ 
