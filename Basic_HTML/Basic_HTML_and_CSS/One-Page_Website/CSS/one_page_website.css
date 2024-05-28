@@ -1,0 +1,27 @@
+/*---------------------
+    FONT STYLE
+------------------------*/
+font.family {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/*-----------------------
+  FONT SIZE
+--------------------------*/
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/*-------------------------
+    INPUTS
+-------------------------*/
+div.a {
+    width: 50%;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 1%;
+  }
