@@ -3,7 +3,7 @@ This is a display of sample websites that I made using HTML and CSS.
 
 Projects
 
-  The Lemoncello Hotel Site
+  The Lemoncello Hotel Site https://github.com/pjs70776/HTML-and-CSS-Projects/blob/main/Basic_HTML/Basic_HTML_and_CSS/Project/index.html
 
   Movie Theater Site
 
