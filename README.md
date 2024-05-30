@@ -3,9 +3,9 @@ This is a display of sample websites that I made using HTML and CSS.
 
 Projects
 
-  The Lemoncello Hotel Site https://github.com/pjs70776/HTML-and-CSS-Projects/blob/main/Basic_HTML/Basic_HTML_and_CSS/Project/index.html
+  * [The Lemoncello Hotel](https://github.com/pjs70776/HTML-and-CSS-Projects/blob/main/Basic_HTML/Basic_HTML_and_CSS/Project/index.html)
 
-  Movie Theater Site https://github.com/pjs70776/HTML-and-CSS-Projects/blob/main/Basic_HTML/Basic_HTML_and_CSS/bootstrap4_project/academy_cinemas.html
+  * [Movie Theater Site](https://github.com/pjs70776/HTML-and-CSS-Projects/blob/main/Basic_HTML/Basic_HTML_and_CSS/bootstrap4_project/academy_cinemas.html)
 
 The Lemoncello Hotel Site: this page is an example home page for a hotel.  It is styled using CSS and contains a navbar, image containers, and a form.
 
