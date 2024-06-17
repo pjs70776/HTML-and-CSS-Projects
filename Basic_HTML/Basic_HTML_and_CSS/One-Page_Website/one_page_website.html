@@ -3,8 +3,12 @@
     <head>
             <title>Offroad Xtreme Superstore Direct</title>
             <link rel="stylesheet" type="text/css" href="CSS/one_page_website.css"/>
+            <source src="JS/one_page_website.js"></script>
             <meta charset="utf-8">
             <font class="family"></class>
+
+            <!--meta name inserted for Lightbox-->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
@@ -167,6 +171,75 @@
         www.offroadxtremesuperstoredirect.org  2024
     </div>
     <!--END FOOTER-->
+
+<!-- Images used to open the lightbox -->
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="Pics/grille.jpg" style="width:50%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pics/lifted-jeep.jpg" style="width:50%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pics/suspension.jpg" style="width:50%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pics/supercharger.jpg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Pics/grille_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Pics/lifted-jeep - wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Pics/suspension - wide.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Pics/supercharger - wide.jpg" style="width:100%">
+    </div>
+    
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo cursor" src="Pics/grille_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="jeep grill">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pics/lifted-jeep - wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="lifted-jeep>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pics/suspension - wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="suspension">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pics/supercharger - wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="supercharger">
+    </div>
+  </div>
+</div>
+
 
     </body>
 </html>
