@@ -1,139 +1,165 @@
 <!DOCTYPE html>
 <html>
+    <!--Head-->
     <head>
-        <meta charset="utf-8">
-        <title>Basic HTML template</title>
-        <link rel="stylesheet" href="./stylesheet/portfolio.css">
-        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Patrick J. Stovers Portfolio</title>
+        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+        <script src="portfolio.js"></script>
     </head>
-    <body>
 
-<div class="body">
-    <div class="h1">
+    <!--Body-->
+    <body class="Background">
         
-    </div>
-</div>
-        
-<!-- NAV -->
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
 
-<div class="container"> 
-    <div class="Navbar">
-    <div class="Navbar a">
-    <div class="Navbar a:hover">
-    <div class="Navbar a.active">
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link text-light" href="#home">Home</a>
-              </li>
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#About">About</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#github">GitHub</a>
-            </li>
-           
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#contact">Contact</a>
-            </li>
-          </ul>
-          </form>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
-      </nav>
 
-<!-- END NAV -->
-  
-<!--HOME-->
-        <div id="home">
-            
-<!--END HOME-->
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
 
-<!--INTRO-->
-        <div id="About">
-            
-            <div class="body">
-                <div class="h1">
-                    <h1>Patrick J. Stover's Portfolio</h1>
-            
-                    <p>“Digital design is like painting, except the paint never dries.”</p>
-                    <p>Neville Brody</p>
+        <!--Background video-->
+        <div id="Home">
+            <!--cant find source video-->
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/Typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
 
-                    <p>My Name is Patrick Stover.  Welcme to my portfolio website. On it, I will tell you about my background and experience.</p>
-                    <p>Thank you for stopping by and please, enjoy!</p>
-                    
-                     <img src="Img/images/img1.jpg" alt="pc and book">
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Patrick J. Stover's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q> I've always been a tech-head.
+                        
+                    </q>
+                    <br> -Nolan Bushnell
+                    <br>
+                    <br> My name is Patrick Stover. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="SlideShowPics/pic1.jpg" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="SlideShowPics/pic2.jpg" alt="HTML logo"> 
+                        <div class="text">I am a front end web developer,<br> trained in:<br>HTML, CSS, and JavaScript.</div>
+                    </div>
+                    <!-- Slide 3 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="SlideShowPics/pic6.jpg" alt="Bootstrap logo">
+                        <div class="text">I also have experience utilizing Bootstrap</div>
+                    </div>
+                   
+                    <!-- Slide 4 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="SlideShowPics/pic7.jpg" alt="Computer"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-            
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span>  
+                </div>
             </div>
         </div>
-<!--END INTRO-->
 
-
-
-<!--ABOUT-->
-        <div id="github">
-            <div class="Column_1"></div>
-            <h1>About</h1>
-            <p>I am a web developer that enjoys to code!  My wife and I live in the Pacific North West, and love getting outside as much as we can.</p>
-            <p>I am a graduate of <a href="https://www.learncodinganywhere.com/">The Tech Academy.</a>'s Front End Web Developer Boot Camp. I am both trained and experienced in the following web programming languages: HTML, CSS, Javascript, and more.</p>
-            <p>As a web developer, I would love to work with you on your project. Contact me below!</p>
-        </div>
-<!--END ABOUT-->
-
-
-
-<!--GITHUB-->
-        <div id="contact">
-            
-            <h1>GitHub</h1>
-            <p>You can view my coding projects on my GitHub profile here:</p>
-            <p><a href="https://github.com/pjs70776">My GitHub profile.</a></p>
-
-            <img src="Img/images/logo.png" alt="logo">
-        </div>
-        </div>
-
-<!--END GITHUB-->
-
-
-
-<!--CONTACT-->
-        <div>
-            <img src="Img/images/contact.pjg.jpg" alt="email">
-            <h1>Contact</h1>
-                <div class="input"></div>
-            
-                <form action="" method="post">
-                    <input class="rsvp" type="text" value="" placeholder="Name">
-                    <input class="rsvp" type="text" value="" placeholder="Email">
-                    <input class="rsvp" type="text" value="" placeholder="Message">
-                    
-                    
-                    </div>
-                    <div class="submit">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="Img/images/img1.jpg" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a website developer who has found coding to be very rewarding! I still have fond memories of my first computer I had when I was 6 years old; a Compaq Deskpro 386. I am still an avid computer hobbiest and love all things technolgy. 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Front End Web Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am a web developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
             </div>
         </div>
-<!--END CONTACT-->
 
-<!--FOOTER-->
-<div class="footer">
-    <p>&#169 Prosper Consulting Inc. <a href="https://www.learncodinganywhere.com/">The Tech Academy.</a></p>
-    
-    
-</div>
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/pjs70776" target="_blank">My personal GitHub account</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/pjs70776" target="_blank"><img src="Img/images/logo.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
 
+<!-- Contact form -->
+<div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+    <div class="form-popup" id="myForm">
+         <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+             <h1>Contact</h1>
+             <label for="name"><b>Name</b></label>
+               <input type="text" placeholder="Type your name here" name="name" required>
+             <label for="phone"><b>Phone</b></label>
+               <input type="text" placeholder="Type your phone number here" name="phone">
+             <label for="email"><b>Email</b></label>		
+               <input type="text" placeholder="Type your email address here" name="email" required>
+             <label for="message"><b>Message</b></label>
+               <input type="text" placeholder="Type your message here" name="message">
+  
+             <button type="submit" class="btn">SUBMIT</button>
+             <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+         </form>
+    </div>
+ </div>
 
-<!--END FOOTER-->
-
-
-
-      
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">Patrick John Stover</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
