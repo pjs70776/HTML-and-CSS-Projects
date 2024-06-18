@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Pop.css"> 
+        <source src="Pop.js"></script>
+    </head>
+    <body>
+<!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Open Medical Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Submit Pre Screen Info</h1>
+
+    <label for="Height"><b>Height</b></label>
+    <input type="text" placeholder="Height" name="Height" required>
+
+    <label for="Weight"><b>Weight</b></label>
+    <input type="Weight" placeholder="Weight" name="Weight" required>
+
+    <button type="submit" class="btn">Submit Pre Screen Info</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</body>
+</html>
