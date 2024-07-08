@@ -1,0 +1,423 @@
+/*------------------------------------
+    GENERIC STYLES
+--------------------------------------*/
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    line-height: 1.42857143;
+    color: whitesmoke;
+    background-color: #3a38388e;
+}
+
+
+nav {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+h1::after {/* this is the underline */
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 150px;
+    background: #faf9f9;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    line-height: 50px;
+    color: #faf9f9;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: inline-block;
+    width:100%;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.containter-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.clearfix::after, /* :after is now ::after with a double colon */
+.container::after,
+.navbar::after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /*this ensures that the images cannot render outside of thier container without forcing any scrollbars*/
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    /* top: 0;
+    left : 0; */
+    /* position: absolute; */ /* to the top edge of the screen */
+    width: 100%;
+    position: fixed;
+
+z-index: 100;
+/* background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+/*------------------------------------------------
+    HOME SECTION STYLES
+-------------------------------------------------*/
+#home {
+    background: url(images/pic1.jpg); no-repeat 50% 50%; 
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /*this spacer before the main title logo */
+    padding-bottom: 500px; /* this is spacer after the main title logo */
+    color: #fff;
+}
+
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+    font-variant: small-caps;
+    color: #7c7b7b;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: left;
+    font-family: impact, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    padding: 10px;
+    
+}
+
+.head-sub-main {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-last {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px 20px 20px 20px;
+    border: 1px dotted #fff;
+    padding: 5px;
+}
+
+/*----------------------------------------
+    CONTACT STYLES
+-----------------------------------------*/
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(207, 144, 26, 0.719);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.terms {
+    margin: 30px 1px 0 0;
+    margin-top: 13%;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #100;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+
+/*----------------------------------------------------
+    FOOTER STYLES
+--------------------------------------------------*/
+#footer {
+    background-color: rgba(235, 68, 46, 0.76);
+    color: #000;
+    text-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 1);
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: sticky;
+    width: 100%;
+    
+}
+
+/*--------------------------------------------
+    GALLERY SECTION ANIMATION
+----------------------------------------------*/
+.carousel-item img {
+    margin: auto;
+    height: 400px;
+    width: 600px;
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: #ff0;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 300px;
+    height: 169px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+}
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /*for centering text inside .photo-overlay */
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.white-head {
+    color: #C9BDAA;
+    margin-top: 5%;
+}
+
+/*------------------------------------------
+    PHOTO OVERLAY TRANSISTIONS
+------------------------------------------*/
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+/*--------------------------
+    GRID
+---------------------------*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* contact form-----------------
+  ------------------------------*/
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  #myBtn {
+    
+    position: fixed; /* Fixed/sticky position */
+    bottom: 70px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+/*  dark mode  */
+.dark-mode {
+    background-color: black;
+    color: red;
+  }
+
+.dark-mode h1 {
+    color: #dfb838;
+   }
+
+.dark-mode h2 {
+    color: #dfb838;
+   }
